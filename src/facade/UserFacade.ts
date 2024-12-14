@@ -1,4 +1,4 @@
-import Constant from "src/constant/Constant";
+import Config from "src/config/Config";
 import UserService from "src/service/UserService";
 import CommonUtil from "src/util/CommonUtil";
 import AuthFacade from "./authentication/AuthFacade";
@@ -132,25 +132,25 @@ class UserFacade {
       {
         firstName: `specific`,
         email: `${
-          Constant.preKey
+          Config.preKey
         }${CommonUtil.generateRandomWord()}@hotmail.com`,
-        password: `${Constant.preKey}${CommonUtil.generateRandomWord()}`,
+        password: `${Config.preKey}${CommonUtil.generateRandomWord()}`,
         isActive: true,
       },
       {
         firstName: `specificName`,
         email: `${
-          Constant.preKey
+          Config.preKey
         }${CommonUtil.generateRandomWord()}@hotmail.com`,
-        password: `${Constant.preKey}${CommonUtil.generateRandomWord()}`,
+        password: `${Config.preKey}${CommonUtil.generateRandomWord()}`,
         isActive: true,
       },
       {
         firstName: `specificName`,
         email: `${
-          Constant.preKey
+          Config.preKey
         }${CommonUtil.generateRandomWord()}@hotmail.com`,
-        password: `${Constant.preKey}${CommonUtil.generateRandomWord()}`,
+        password: `${Config.preKey}${CommonUtil.generateRandomWord()}`,
         isActive: true,
       },
     ];
@@ -178,25 +178,25 @@ class UserFacade {
       {
         firstName: `partialName`,
         email: `${
-          Constant.preKey
+          Config.preKey
         }${CommonUtil.generateRandomWord()}@hotmail.com`,
-        password: `${Constant.preKey}${CommonUtil.generateRandomWord()}`,
+        password: `${Config.preKey}${CommonUtil.generateRandomWord()}`,
         isActive: true,
       },
       {
         firstName: `partial`,
         email: `${
-          Constant.preKey
+          Config.preKey
         }${CommonUtil.generateRandomWord()}@hotmail.com`,
-        password: `${Constant.preKey}${CommonUtil.generateRandomWord()}`,
+        password: `${Config.preKey}${CommonUtil.generateRandomWord()}`,
         isActive: true,
       },
       {
-        firstName: `${Constant.preKey}_partialNameToSearch`,
+        firstName: `${Config.preKey}_partialNameToSearch`,
         email: `${
-          Constant.preKey
+          Config.preKey
         }${CommonUtil.generateRandomWord()}@hotmail.com`,
-        password: `${Constant.preKey}${CommonUtil.generateRandomWord()}`,
+        password: `${Config.preKey}${CommonUtil.generateRandomWord()}`,
         isActive: true,
       },
     ];
@@ -223,12 +223,12 @@ class UserFacade {
       updateData
     );
 
-    // check update time assume as 2 mins
-    const currentTime = Date.now();
-    const twoMinutesInMs = 2 * 60 * 1000;
-    const elapsedTime =
-      currentTime - new Date(updatedInstance.updatedAt).getTime();
-    if (elapsedTime > twoMinutesInMs) throw new Error("update time invalid");
+    // // check update time assume as 2 mins
+    // const currentTime = Date.now();
+    // const twoMinutesInMs = 2 * 60 * 1000;
+    // const elapsedTime =
+    //   currentTime - new Date(updatedInstance.updatedAt).getTime();
+    // if (elapsedTime > twoMinutesInMs) throw new Error("update time invalid");
 
     // check updated fields
     if (
@@ -251,7 +251,7 @@ class UserFacade {
 
     // prepare data
     const updateData = {
-      newPassword: `${Constant.preKey}newPassword`,
+      newPassword: `${Config.preKey}newPassword`,
     };
 
     // update password

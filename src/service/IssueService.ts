@@ -1,4 +1,4 @@
-import Constant from "src/constant/Constant";
+import Config from "src/config/Config";
 import CommonUtil from "src/util/CommonUtil";
 import CoreEntityService from "./core/CoreEntityService";
 
@@ -10,10 +10,10 @@ class IssueService extends CoreEntityService {
   async getDefaultCreateData() {
     return {
       title: `${
-        Constant.preKey
+        Config.preKey
       }${CommonUtil.generateRandomWord()}_newIssueTitle`,
       description: `${
-        Constant.preKey
+        Config.preKey
       }${CommonUtil.generateRandomWord()}_newIssueDescription`,
       isActive: true,
     };

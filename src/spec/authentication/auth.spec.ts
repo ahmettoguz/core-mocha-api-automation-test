@@ -1,6 +1,8 @@
 import addContext from "mochawesome/addContext";
 import AuthFacade from "src/facade/authentication/AuthFacade";
+import HelperFacade from "src/facade/HelperFacade";
 
+const helperFacade = new HelperFacade();
 const authFacade = new AuthFacade();
 
 before(async () => {});
@@ -18,7 +20,10 @@ describe("Authentication Operation Tests [auth.spec]", function () {
     // add context information
     addContext(this, "Validating jwt token.");
 
+    // get admin jwt
+    const jwt = await helperFacade.getAdminJwt();
+
     // perform operation
-    await authFacade.validateJwt();
+    await authFacade.validateJwt(jwt);
   });
 });

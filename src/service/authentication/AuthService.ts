@@ -1,4 +1,4 @@
-import Constant from "src/constant/Constant";
+import Config from "src/config/Config";
 import { AxiosServiceBuilder } from "src/util/AxiosService";
 
 class AuthService {
@@ -9,7 +9,7 @@ class AuthService {
 
   async login(data) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/login`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/login`;
     const method = "post";
 
     // send  request
@@ -23,14 +23,14 @@ class AuthService {
       return response;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.login:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.login:: Axios error: ${JSON.stringify(e.response.data, null, 2)}`
       );
     }
   }
 
   async validateJwt(jwt) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/validate`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/validate`;
     const method = "post";
 
     // send  request
@@ -43,7 +43,7 @@ class AuthService {
       await axiosService.request();
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.validateJwt:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.validateJwt:: Axios error: ${JSON.stringify(e.response.data, null, 2)}`
       );
     }
   }

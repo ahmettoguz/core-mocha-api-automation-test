@@ -1,15 +1,15 @@
-import App from "src/app/App";
+import Config from "src/config/Config";
 import AuthService from "src/service/authentication/AuthService";
 import CommonUtil from "src/util/CommonUtil";
 
 const authService = new AuthService();
 
 class AuthFacade {
-  async login(data = null, user = null) {
+  async login(data = null) {
     // prepare request
     data = data ?? {
-      email: App.admin.email,
-      password: App.admin.password,
+      email: Config.admin.email,
+      password: Config.admin.password,
     };
 
     //perform action
@@ -18,13 +18,12 @@ class AuthFacade {
     // get jwt
     const jwt = CommonUtil.extractJwtToken(response);
 
-    // set jwt
-    if (user) user.jwt = `Bearer ${jwt}`;
+    return `Bearer ${jwt}`;
   }
 
-  async validateJwt() {
+  async validateJwt(jwt) {
     //perform action
-    await authService.validateJwt(App.admin.jwt);
+    await authService.validateJwt(jwt);
   }
 }
 

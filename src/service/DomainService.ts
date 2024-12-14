@@ -1,4 +1,4 @@
-import Constant from "src/constant/Constant";
+import Config from "src/config/Config";
 import CommonUtil from "src/util/CommonUtil";
 import CoreEntityService from "./core/CoreEntityService";
 
@@ -9,7 +9,7 @@ class DomainService extends CoreEntityService {
 
   async getDefaultCreateData() {
     return {
-      name: `${Constant.preKey}${CommonUtil.generateRandomWord()}`,
+      name: `${Config.preKey}${CommonUtil.generateRandomWord()}`,
       isActive: true,
     };
   }
