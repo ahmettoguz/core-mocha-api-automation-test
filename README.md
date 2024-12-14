@@ -43,6 +43,10 @@ Core Mocha API Automation Test is a project aims to ensure quality of the APIs. 
 
 &nbsp; [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
 
+### Report
+
+&nbsp; [![Mochawesome](https://img.shields.io/badge/MochAwesome-37474F?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
+
 <br/>
 
 <h2 id="features">🔥 Features</h2>
