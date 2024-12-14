@@ -13,6 +13,7 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [System Startup](#system-startup)
+- [Test Report](#test-report)
 - [Manual Testing](#manual-testing)
 - [Contributors](#contributors)
  
@@ -97,6 +98,14 @@ Run spec tests in sequential
 ```
 npm run spec
 ```
+
+<br/>
+
+<h2 id="test-report">🐛 Test Report</h2>
+
+Mochawesome is integrated into the project to generate comprehensive test reports. The reports provide detailed insights into test execution, including the results of individual tests, their durations, and any issues encountered.
+
+After running the tests, you can view the generated report at `/mochawesome-report/mochawesome.html`. This report is automatically generated upon test completion.
     
 <br/>
 
