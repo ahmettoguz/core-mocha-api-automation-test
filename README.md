@@ -69,6 +69,8 @@ Ensure Postman is installed for manual test.
 
 <h2 id="system-startup">🚀 System Startup</h2>
 
+Refer to the [`core-java-spring-boot-rest-api`](https://github.com/ahmettoguz/core-java-spring-boot-rest-api) repository for detailed instructions on running the API as specified in the system startup.
+
 Modify `.env` file for further configurations.
 
 Install dependencies
