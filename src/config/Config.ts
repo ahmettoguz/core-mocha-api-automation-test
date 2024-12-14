@@ -1,4 +1,4 @@
-class Constant {
+class Config {
   static baseUrl = "http://localhost:8080";
   static preKey = "apiTest_";
 
@@ -8,4 +8,4 @@ class Constant {
   };
 }
 
-export default Constant;
+export default Config;

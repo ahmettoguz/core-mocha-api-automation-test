@@ -1,4 +1,4 @@
-import Constant from "src/constant/Constant";
+import Config from "src/config/Config";
 import { AxiosServiceBuilder } from "src/util/AxiosService";
 
 abstract class CoreEntityService {
@@ -12,7 +12,7 @@ abstract class CoreEntityService {
   async create(jwt = null, data = null) {
     // prepare request
     data = data ?? (await this.getDefaultCreateData());
-    const url = `${Constant.baseUrl}/api/${this.prefix}`;
+    const url = `${Config.baseUrl}/api/${this.prefix}`;
     const method = "post";
 
     // create instance
@@ -57,7 +57,7 @@ abstract class CoreEntityService {
 
   async readAll(jwt) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}`;
+    const url = `${Config.baseUrl}/api/${this.prefix}`;
     const method = "get";
 
     // read all instances
@@ -81,7 +81,7 @@ abstract class CoreEntityService {
 
   async readWithId(jwt, instanceId) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/${instanceId}`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/${instanceId}`;
     const method = "get";
 
     // read instance
@@ -105,7 +105,7 @@ abstract class CoreEntityService {
 
   async readPagedSorted(jwt, data) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/paged`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/paged`;
     const method = "get";
     data =
       data ??
@@ -137,7 +137,7 @@ abstract class CoreEntityService {
 
   async count(jwt) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/count`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/count`;
     const method = "get";
 
     // read count
@@ -161,7 +161,7 @@ abstract class CoreEntityService {
 
   async update(jwt, instanceId, data) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/${instanceId}`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/${instanceId}`;
     const method = "put";
 
     // update instance
@@ -186,7 +186,7 @@ abstract class CoreEntityService {
 
   async deactivate(jwt, instanceId) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/${instanceId}/deactivate`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/${instanceId}/deactivate`;
     const method = "patch";
 
     // update instance
@@ -210,7 +210,7 @@ abstract class CoreEntityService {
 
   async activate(jwt, instanceId) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/${instanceId}/activate`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/${instanceId}/activate`;
     const method = "patch";
 
     // update instance
@@ -234,7 +234,7 @@ abstract class CoreEntityService {
 
   async delete(jwt, instanceId) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/${instanceId}`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/${instanceId}`;
     const method = "delete";
 
     // delete instance

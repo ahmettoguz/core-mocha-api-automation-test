@@ -1,4 +1,4 @@
-import Constant from "src/constant/Constant";
+import Config from "src/config/Config";
 import { AxiosServiceBuilder } from "src/util/AxiosService";
 
 class HealthCheckService {
@@ -9,7 +9,7 @@ class HealthCheckService {
 
   async checkServerStatus() {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}`;
+    const url = `${Config.baseUrl}/api/${this.prefix}`;
     const method = "get";
 
     try {
@@ -26,7 +26,7 @@ class HealthCheckService {
   }
   async checkAppInformation() {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/info`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/info`;
     const method = "get";
 
     try {

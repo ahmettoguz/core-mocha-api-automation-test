@@ -1,5 +1,5 @@
 import App from "src/app/App";
-import Constant from "src/constant/Constant";
+import Config from "src/config/Config";
 import RoleEnum from "src/enum/RoleEnum";
 import UserService from "src/service/UserService";
 import AuthFacade from "../authentication/AuthFacade";
@@ -18,7 +18,7 @@ class InitFacade {
   async initialAdminRoleGrant() {
     // perform action
     await userRoleFacade.associateUserAndRole(
-      Constant.admin.jwt,
+      Config.admin.jwt,
       App.admin.id,
       [RoleEnum.ADMIN.id]
     );

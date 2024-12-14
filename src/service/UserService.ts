@@ -1,4 +1,4 @@
-import Constant from "src/constant/Constant";
+import Config from "src/config/Config";
 import { AxiosServiceBuilder } from "src/util/AxiosService";
 import CommonUtil from "src/util/CommonUtil";
 import CoreEntityService from "./core/CoreEntityService";
@@ -10,9 +10,9 @@ class UserService extends CoreEntityService {
 
   async getDefaultCreateData() {
     return {
-      firstName: `${Constant.preKey}${CommonUtil.generateRandomWord()}`,
-      email: `${Constant.preKey}${CommonUtil.generateRandomWord()}@hotmail.com`,
-      password: `${Constant.preKey}${CommonUtil.generateRandomWord()}`,
+      firstName: `${Config.preKey}${CommonUtil.generateRandomWord()}`,
+      email: `${Config.preKey}${CommonUtil.generateRandomWord()}@hotmail.com`,
+      password: `${Config.preKey}${CommonUtil.generateRandomWord()}`,
       isActive: true,
     };
   }
@@ -32,7 +32,7 @@ class UserService extends CoreEntityService {
 
   async searchByExactName(jwt, searchString) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/search/exact`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/search/exact`;
     const method = "get";
     const data = {
       pageNumber: 0,
@@ -63,7 +63,7 @@ class UserService extends CoreEntityService {
 
   async searchByPartialName(jwt, searchString) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/search/partial`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/search/partial`;
     const method = "get";
     const data = {
       pageNumber: 0,
@@ -94,7 +94,7 @@ class UserService extends CoreEntityService {
 
   async updateUserPassword(jwt, instanceId, data) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/${instanceId}/password`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/${instanceId}/password`;
     const method = "patch";
 
     // update instance

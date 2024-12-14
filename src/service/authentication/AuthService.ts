@@ -1,4 +1,4 @@
-import Constant from "src/constant/Constant";
+import Config from "src/config/Config";
 import { AxiosServiceBuilder } from "src/util/AxiosService";
 
 class AuthService {
@@ -9,7 +9,7 @@ class AuthService {
 
   async login(data) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/login`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/login`;
     const method = "post";
 
     // send  request
@@ -30,7 +30,7 @@ class AuthService {
 
   async validateJwt(jwt) {
     // prepare request
-    const url = `${Constant.baseUrl}/api/${this.prefix}/validate`;
+    const url = `${Config.baseUrl}/api/${this.prefix}/validate`;
     const method = "post";
 
     // send  request
