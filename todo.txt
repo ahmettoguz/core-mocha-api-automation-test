@@ -45,6 +45,7 @@ paralel olmayan testler kalkmalı
 features
 ****
 + auto generated report 
++ parallel mode
++ option to run specific spec
 
-- parallel mode
 ****
