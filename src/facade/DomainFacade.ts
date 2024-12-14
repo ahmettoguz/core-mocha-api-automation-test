@@ -141,12 +141,12 @@ class DomainFacade {
       updateData
     );
 
-    // check update time assume as 2 mins
-    const currentTime = Date.now();
-    const twoMinutesInMs = 2 * 60 * 1000;
-    const elapsedTime =
-      currentTime - new Date(updatedInstance.updatedAt).getTime();
-    if (elapsedTime > twoMinutesInMs) throw new Error("update time invalid");
+    // // check update time assume as 2 mins
+    // const currentTime = Date.now();
+    // const twoMinutesInMs = 2 * 60 * 1000;
+    // const elapsedTime =
+    //   currentTime - new Date(updatedInstance.updatedAt).getTime();
+    // if (elapsedTime > twoMinutesInMs) throw new Error("update time invalid");
 
     // check updated fields
     if (!updatedInstance.name && updatedInstance.name != updateData.name)
