@@ -13,7 +13,7 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [System Startup](#system-startup)
-- [Manuel Testing](#manuel-testing)
+- [Manual Testing](#manual-testing)
 - [Contributors](#contributors)
  
 <br/>
@@ -35,6 +35,8 @@ Core Mocha API Automation Test is a project aims to ensure quality of the APIs. 
 
 &nbsp; [![Axios](https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
 
+&nbsp; [![.Env](https://img.shields.io/badge/.ENV-ECD53F.svg?style=for-the-badge&logo=dotenv&logoColor=black)](https://www.ibm.com/docs/bg/aix/7.2?topic=files-env-file)
+
 
 ### Test
 
@@ -51,23 +53,54 @@ Core Mocha API Automation Test is a project aims to ensure quality of the APIs. 
 + **Postman Scripts:** Includes Postman scripts for testing all API endpoints, enabling manual testing and validation of functionality.
 + **Database Cleanup:** Ability to clean database data, ensuring the environment is reset and ready for the next test run.
 + **Comprehensive API Testing:** Tests all API endpoints for correctness.
++ **Environment Variables**: Support for environment variables to manage configurations.
 
 <br/>
 
 <h2 id="prerequisites">🔒 Prerequisites</h2>
 
-Ensure Node.js installed for automation test.
-Ensure Postman installed for manuel test.
+Ensure Node.js is installed for automation test.
+Ensure Postman is installed for manual test.
 
 <br/>
 
 <h2 id="system-startup">🚀 System Startup</h2> 
 
-* Place credentials in the `application-dev.properties` file.
+Modify `.env` file for further configurations.
 
+Install dependencies
+```
+npm i
+```
+
+Run parallel tests and clean database
+```
+npm run test:parallel:clean
+```
+    
+Run parallel tests
+```
+npm run test:parallel
+```
+    
+Run sequential tests
+```
+npm run test
+```
+    
+Run spec tests in parallel
+```
+npm run spec:parallel
+```
+
+Run spec tests in sequential
+```
+npm run spec
+```
+    
 <br/>
 
-<h2 id="manuel-testing">🔬 Manual Testing</h2>
+<h2 id="manual-testing">🔬 Manual Testing</h2>
 
 To run the Postman tests, first import the Postman collection file from the path `./src/postman-request` into Postman by selecting the `Import` option. After importing, locate the collection in Postman, execute the individual requests for each. Review the responses to ensure that the endpoints are functioning as expected.
 
