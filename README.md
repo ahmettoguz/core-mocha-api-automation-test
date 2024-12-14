@@ -3,7 +3,7 @@
 <br>
 
 <div align="center">
-    <img width=250 src="assets/banner.png">
+    <img width=250 src="assets/images/banner/banner.png">
 </div>
 
 ## 🔍 Table of Contents
@@ -116,6 +116,10 @@ npm run spec
 Mochawesome is integrated into the project to generate comprehensive test reports. The reports provide detailed insights into test execution, including the results of individual tests, their durations, and any issues encountered.
 
 After running the tests, you can view the generated report at `/mochawesome-report/mochawesome.html`. This report is automatically generated upon test completion.
+
+<div align="center">
+    <img width=250 src="assets/images/report/report.png">
+</div>
 
 <br/>
 
