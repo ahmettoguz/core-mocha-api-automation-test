@@ -3,7 +3,7 @@
 <br>
 
 <div align="center">
-    <img width=300 src="assets/banner.png">
+    <img width=250 src="assets/banner.png">
 </div>
 
 ## 🔍 Table of Contents
@@ -11,42 +11,34 @@
 - [About Project](#intro)
 - [Technologies](#technologies)
 - [Features](#features)
-- [Releases](#releases)
 - [Prerequisites](#prerequisites)
 - [System Startup](#system-startup)
-  - [Developer Mode](#developer-mode)
-  - [Production Mode](#production-mode)
-- [Endpoint Documentation](#endpoint-documentation)
 - [Manuel Testing](#manuel-testing)
 - [Contributors](#contributors)
  
 <br/>
 
-<h2 id="intro">📌 About Project</h2> 
+<h2 id="intro">📌 About Project</h2>
 
-This project aims to manage email transmissions using Docker and microservices architecture, further secured by TLS for encrypted communication. Utilizing Docker enhances service isolation, leading to improved scalability and easier maintenance. Additionally, microservices facilitate secure interactions among small, autonomous components via APIs, which are secured by TLS encryption.
+Core Mocha API Automation Test is a project aims to ensure quality of the APIs. It supports running tests in both parallel and standard modes to optimize execution times while ensuring thorough validation of API endpoints. The project generates auto-reports to give users detailed insights into test results.
+
 
 <br/>
 
 <h2 id="technologies">☄️ Technologies</h2>
 
-### DevOps
+&nbsp; [![NodeJs](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
 
-&nbsp; [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+&nbsp; [![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
 
-### Web
+&nbsp; [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-&nbsp; [![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/)
+&nbsp; [![Axios](https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
 
-&nbsp; [![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)](https://spring.io/)
-
-&nbsp; [![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)](https://spring.io/projects/spring-boot)
-
-&nbsp; [![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black)](https://tomcat.apache.org/)
-
-&nbsp; [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white)](https://swagger.io/)
 
 ### Test
+
+&nbsp; [![Mocha](https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
 
 &nbsp; [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
 
@@ -54,44 +46,22 @@ This project aims to manage email transmissions using Docker and microservices a
 
 <h2 id="features">🔥 Features</h2>
 
-+ **TLS/HTTPS:** Centeralized TLS/HTTPS support for all services with selfsigned certificate.
-+ **External Communication:** Manage communication with frontend.
-+ **Postman Endpoint Collection:** Postman collection added for ensure validation of all API endpoints.
-+ **Swagger Documentation:** Comprehensive API documentation integrated for documentation and testing purposes.
-+ **Environment Configuration:** Configurations have been adjusted for enhanced flexibility.
-+ **Dockerization:** The application is containerized for consistent deployment and scaling.
-
-<br/>
-
-<h2 id="releases">🚢 Releases</h2> 
-
-&nbsp; [![.](https://img.shields.io/badge/1.1.2-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.1.2)
-
-&nbsp; [![.](https://img.shields.io/badge/1.1.1-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.1.1)
-
-&nbsp; [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.1.0)
-
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.0.0)
++ **Parallel and Standard Modes:** Run tests in parallel for faster execution or in standard mode.
++ **Auto-generated Reports:** Automatically generates detailed reports summarizing test results and highlighting any issues.
++ **Postman Scripts:** Includes Postman scripts for testing all API endpoints, enabling manual testing and validation of functionality.
++ **Database Cleanup:** Ability to clean database data, ensuring the environment is reset and ready for the next test run.
++ **Comprehensive API Testing:** Tests all API endpoints for correctness.
 
 <br/>
 
 <h2 id="prerequisites">🔒 Prerequisites</h2>
 
-Google removed plain-text authentication on September 30, 2024. To send emails using a Google account, you now need to enable 2-Step Verification and use an app password.
-
-<br/>
-
-* Go to your Google Account settings at [`myaccount.google.com`](https://myaccount.google.com/).
-* In the navigation panel, select [`Security`](https://myaccount.google.com/security).
-* Under `How you sign in to Google`, select `2-Step Verification`.
-* Add your phone number as a verification method.
-* Go to  [`myaccount.google.com/u/1/apppasswords`](https://myaccount.google.com/u/1/apppasswords) and generate a new app password.
+Ensure Node.js installed for automation test.
+Ensure Postman installed for manuel test.
 
 <br/>
 
 <h2 id="system-startup">🚀 System Startup</h2> 
-
-<h3 id="developer-mode">🧪 Developer Mode</h3>
 
 * Place credentials in the `application-dev.properties` file.
 
@@ -114,25 +84,6 @@ docker ps -a
 
 docker rm -f micro-email-container
 ```
-
-<br/>
-
-<h3 id="production-mode">⚡Production Mode</h3> 
-
-* Copy `application-dev.properties` to create `application-prod.properties`.
-* Change `app.var.appMode` to `prod`.
-* Change `server.port` to `80`.
-* Place credentials.
-* Follow the instructions in the [`Micro-Docker-Config repository`](https://github.com/ahmettoguz/Micro-Docker-Config) to configure Docker for production.
-
-<br/>
-
-<h2 id="endpoint-documentation">📍 Endpoint Documentation</h2>
-You can access the full API documentation using Swagger UI.
-
-To view the documentation visit: [`sw/swagger-ui/index.html`](https://email.localhost/sw/swagger-ui/index.html)
-
-![endpoint-doc](src/main/resources/assets/endpoint-doc/endpoint-doc.png)
 
 <br/>
 
