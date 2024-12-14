@@ -67,29 +67,9 @@ Ensure Postman installed for manuel test.
 
 <br/>
 
-#### Using command line
-
-```
-mvnw spring-boot:run
-```
-
-#### Using Docker
-
-```
-docker build -t micro-email-image .
-
-docker run -d -p 8082:80 --name micro-email-container micro-email-image
-
-docker ps -a
-
-docker rm -f micro-email-container
-```
-
-<br/>
-
 <h2 id="manuel-testing">🔬 Manual Testing</h2>
 
-To run the Postman tests, first import the Postman collection file from the path ./src/main/resources/postman-request/ into Postman by selecting the "Import" option. After importing, locate the collection in Postman, execute the individual requests for each. Review the responses to ensure that the endpoints are functioning as expected.
+To run the Postman tests, first import the Postman collection file from the path `./src/postman-request` into Postman by selecting the `Import` option. After importing, locate the collection in Postman, execute the individual requests for each. Review the responses to ensure that the endpoints are functioning as expected.
 
 <br/>
 
