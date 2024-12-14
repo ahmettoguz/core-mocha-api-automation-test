@@ -1,10 +1,12 @@
+import envVariables from "src/env/EnvVariables";
+
 class Config {
-  static baseUrl = "http://localhost:8080";
-  static preKey = "apiTest_";
+  static baseUrl = envVariables.baseUrl;
+  static preKey = envVariables.preKey;
 
   static admin = {
-    email: "admin@hotmail.com",
-    password: "admin",
+    email: envVariables.adminEmail,
+    password: envVariables.adminPassword,
   };
 }
 
