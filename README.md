@@ -117,8 +117,10 @@ Mochawesome is integrated into the project to generate comprehensive test report
 
 After running the tests, you can view the generated report at `/mochawesome-report/mochawesome.html`. This report is automatically generated upon test completion.
 
+Demonstration of the Report:
+
 <div align="center">
-    <img width=250 src="assets/images/report/report.png">
+    <img width=700 src="assets/images/report/report.png">
 </div>
 
 <br/>
