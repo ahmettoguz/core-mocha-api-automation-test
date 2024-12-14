@@ -30,7 +30,11 @@ abstract class CoreEntityService {
       instanceToCreate = response.data.data;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.create:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.create:: Axios error: ${JSON.stringify(
+          e.response.data,
+          null,
+          2
+        )}`
       );
     }
 
@@ -72,7 +76,11 @@ abstract class CoreEntityService {
       instancesToRead = response.data.data;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.readAll:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.readAll:: Axios error: ${JSON.stringify(
+          e.response.data,
+          null,
+          2
+        )}`
       );
     }
 
@@ -96,7 +104,11 @@ abstract class CoreEntityService {
       instanceToRead = response.data.data;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.readWithId:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.readWithId:: Axios error: ${JSON.stringify(
+          e.response.data,
+          null,
+          2
+        )}`
       );
     }
 
@@ -128,7 +140,13 @@ abstract class CoreEntityService {
       pagedInstances = response.data.data;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.readPagedSorted:: Axios error with code: ${e.code}`
+        `${
+          this.constructor.name
+        }.readPagedSorted:: Axios error: ${JSON.stringify(
+          e.response.data,
+          null,
+          2
+        )}`
       );
     }
 
@@ -152,7 +170,11 @@ abstract class CoreEntityService {
       count = response.data.data;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.count:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.count:: Axios error: ${JSON.stringify(
+          e.response.data,
+          null,
+          2
+        )}`
       );
     }
 
@@ -177,7 +199,11 @@ abstract class CoreEntityService {
       updatedInstance = response.data.data;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.update:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.update:: Axios error: ${JSON.stringify(
+          e.response.data,
+          null,
+          2
+        )}`
       );
     }
 
@@ -201,7 +227,11 @@ abstract class CoreEntityService {
       operationStatus = response.data;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.deactivate:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.deactivate:: Axios error: ${JSON.stringify(
+          e.response.data,
+          null,
+          2
+        )}`
       );
     }
 
@@ -225,7 +255,11 @@ abstract class CoreEntityService {
       operationStatus = response.data;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.activate:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.activate:: Axios error: ${JSON.stringify(
+          e.response.data,
+          null,
+          2
+        )}`
       );
     }
 
@@ -249,7 +283,11 @@ abstract class CoreEntityService {
       operationStatus = response.data;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.delete:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.delete:: Axios error: ${JSON.stringify(
+          e.response.data,
+          null,
+          2
+        )}`
       );
     }
 

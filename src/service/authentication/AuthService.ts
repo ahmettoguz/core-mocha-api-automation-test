@@ -23,7 +23,7 @@ class AuthService {
       return response;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.login:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.login:: Axios error: ${JSON.stringify(e.response.data, null, 2)}`
       );
     }
   }
@@ -43,7 +43,7 @@ class AuthService {
       await axiosService.request();
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.validateJwt:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.validateJwt:: Axios error: ${JSON.stringify(e.response.data, null, 2)}`
       );
     }
   }

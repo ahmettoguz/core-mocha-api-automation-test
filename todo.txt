@@ -33,3 +33,18 @@ test servis kısmında error atarken sadece code'u gösteriyorum bir hata yaptı
 **/postman-request/**, **/node_modules/**,mochawesome-report
 
 paralel olmayan testler kalkmalı
+
+
+
+
+
+
+
+
+
+features
+****
++ auto generated report 
+
+- parallel mode
+****

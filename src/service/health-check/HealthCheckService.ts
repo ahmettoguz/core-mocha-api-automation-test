@@ -20,7 +20,7 @@ class HealthCheckService {
       await axiosService.request();
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.checkServerStatus:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.checkServerStatus:: Axios error: ${JSON.stringify(e.response.data, null, 2)}`
       );
     }
   }
@@ -38,7 +38,7 @@ class HealthCheckService {
       return response;
     } catch (e: any) {
       throw new Error(
-        `${this.constructor.name}.checkAppInformation:: Axios error with code: ${e.code}`
+        `${this.constructor.name}.checkAppInformation:: Axios error: ${JSON.stringify(e.response.data, null, 2)}`
       );
     }
   }
