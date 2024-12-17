@@ -10,7 +10,9 @@
 
 - [About Project](#intro)
 - [Technologies](#technologies)
+- [Software Versions](#software-versions)
 - [Features](#features)
+- [Releases](#releases)
 - [Prerequisites](#prerequisites)
 - [System Startup](#system-startup)
 - [Test Report](#test-report)
@@ -27,9 +29,9 @@ Core Mocha API Automation Test is a project aims to ensure quality of the APIs. 
 
 <h2 id="technologies">☄️ Technologies</h2>
 
-&nbsp; [![NodeJs](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
+### Web
 
-&nbsp; [![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
+&nbsp; [![NodeJs](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
 
 &nbsp; [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
@@ -37,15 +39,29 @@ Core Mocha API Automation Test is a project aims to ensure quality of the APIs. 
 
 &nbsp; [![.Env](https://img.shields.io/badge/.ENV-ECD53F.svg?style=for-the-badge&logo=dotenv&logoColor=black)](https://www.ibm.com/docs/bg/aix/7.2?topic=files-env-file)
 
+### Package Manager
+
+&nbsp; [![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
+
 ### Test
 
 &nbsp; [![Mocha](https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
 
 &nbsp; [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
 
+
 ### Report
 
 &nbsp; [![Mochawesome](https://img.shields.io/badge/MochAwesome-37474F?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
+
+<br/>
+
+<h2 id="software-versions">🏷️ Software Versions</h2>
+
+| Software     | Version    |
+|--------------|------------|
+| NodeJS       | 22.11.0    |
+| npm          | 10.8.3     |
 
 <br/>
 
@@ -57,6 +73,12 @@ Core Mocha API Automation Test is a project aims to ensure quality of the APIs. 
 - **Database Cleanup:** Ability to clean database data, ensuring the environment is reset and ready for the next test run.
 - **Comprehensive API Testing:** Tests all API endpoints for correctness.
 - **Environment Variables**: Support for environment variables to manage configurations.
+
+<br/>
+
+<h2 id="releases">🚢 Releases</h2> 
+
+&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Backend/tree/v1.0.0)
 
 <br/>
 
