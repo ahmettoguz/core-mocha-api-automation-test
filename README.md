@@ -84,8 +84,8 @@ Core Mocha API Automation Test is a project aims to ensure quality of the APIs. 
 
 <h2 id="prerequisites">🔒 Prerequisites</h2>
 
-Ensure Node.js is installed for automation test.
-Ensure Postman is installed for manual test.
+* Ensure Node.js is installed for JavaScript runtime environment.
+* Ensure Postman is installed for manual test.
 
 <br/>
 
