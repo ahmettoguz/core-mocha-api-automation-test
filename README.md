@@ -39,12 +39,6 @@
 
 <br/>
 
-<h2 id="releases">🚢 Releases</h2> 
-
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)
-
-<br/>
-
 <h2 id="system-startup">🚀 System Startup</h2>
 
 Refer to the [`core-java-spring-boot-rest-api`](https://github.com/ahmettoguz/core-java-spring-boot-rest-api) repository for detailed instructions on running the API as specified in the system startup.
