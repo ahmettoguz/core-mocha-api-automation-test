@@ -1,4 +1,4 @@
-<h1 id="top" align="center">🚢 V1.0.0 🚢</h1> 
+<h1 id="top" align="center">🚢 v1.0.0 🚢</h1> 
 
 <br>
 
