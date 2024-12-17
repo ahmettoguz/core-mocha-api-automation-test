@@ -78,7 +78,7 @@ Core Mocha API Automation Test is a project aims to ensure quality of the APIs. 
 
 <h2 id="releases">🚢 Releases</h2> 
 
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)
+&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=version&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)
 
 <br/>
 
