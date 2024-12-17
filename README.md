@@ -1,10 +1,6 @@
-<h1 id="top" align="center">Core  Mocha <br/> API Automation Test</h1>
+<h1 id="top" align="center">🚢 V1.0.0 🚢</h1> 
 
 <br>
-
-<div align="center">
-    <img width=250 src="assets/images/banner/banner.png">
-</div>
 
 ## 🔍 Table of Contents
 
