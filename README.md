@@ -8,51 +8,12 @@
 
 ## 🔍 Table of Contents
 
-- [About Project](#intro)
-- [Technologies](#technologies)
 - [Software Versions](#software-versions)
 - [Features](#features)
-- [Releases](#releases)
-- [Prerequisites](#prerequisites)
+- [Next Release Features](#next-release-features)
 - [System Startup](#system-startup)
 - [Test Report](#test-report)
 - [Manual Testing](#manual-testing)
-- [Contributors](#contributors)
-
-<br/>
-
-<h2 id="intro">📌 About Project</h2>
-
-Core Mocha API Automation Test is a project aims to ensure quality of the APIs. It supports running tests in both parallel and standard modes to optimize execution times while ensuring thorough validation of API endpoints. The project generates auto-reports to give users detailed insights into test results.
-
-<br/>
-
-<h2 id="technologies">☄️ Technologies</h2>
-
-### Web
-
-&nbsp; [![NodeJs](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
-
-&nbsp; [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-
-&nbsp; [![Axios](https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
-
-&nbsp; [![.Env](https://img.shields.io/badge/.ENV-ECD53F.svg?style=for-the-badge&logo=dotenv&logoColor=black)](https://www.ibm.com/docs/bg/aix/7.2?topic=files-env-file)
-
-### Package Manager
-
-&nbsp; [![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
-
-### Test
-
-&nbsp; [![Mocha](https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
-
-&nbsp; [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
-
-
-### Report
-
-&nbsp; [![Mochawesome](https://img.shields.io/badge/MochAwesome-37474F?style=for-the-badge&logo=Mocha&logoColor=white)](https://mochajs.org/)
 
 <br/>
 
@@ -76,16 +37,15 @@ Core Mocha API Automation Test is a project aims to ensure quality of the APIs. 
 
 <br/>
 
-<h2 id="releases">🚢 Releases</h2> 
+<h2 id="next-release-features">🚧 Next Release Features</h2>
 
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)
+- Not planning further features.
 
 <br/>
 
-<h2 id="prerequisites">🔒 Prerequisites</h2>
+<h2 id="releases">🚢 Releases</h2> 
 
-* Ensure Node.js is installed for JavaScript runtime environment.
-* Ensure Postman is installed for manual test.
+&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/core-mocha-api-automation-test/tree/v1.0.0)
 
 <br/>
 
@@ -152,9 +112,5 @@ Demonstration of the Report:
 To run the Postman tests, first import the Postman collection file from the path `./src/postman-request` into Postman by selecting the `Import` option. After importing, locate the collection in Postman, execute the individual requests for each. Review the responses to ensure that the endpoints are functioning as expected.
 
 <br/>
-
-<h2 id="contributors">👥 Contributors</h2>
-
-<a href="https://github.com/ahmettoguz" target="_blank"><img width=60 height=60 src="https://avatars.githubusercontent.com/u/101711642?v=4"></a>
 
 ### [🔝](#top)
